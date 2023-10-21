@@ -402,7 +402,7 @@ struct icon {
 	/**
 	 * @brief Iconhash received or image data for upload.
 	 */
-	std::variant<iconhash, image_data> hash_or_data;
+	std::variant<std::monostate, iconhash, image_data> hash_or_data;
 
 	/**
 	 * @brief Assign to iconhash.
